@@ -33,6 +33,11 @@ export default class TerminalController {
         })    
     }
 
+    updateTable(item) {
+        this.data.push(item)
+        this.print(chalkTable(this.getTableOptions(), this.data))
+    }
+
     closeTerminal() {
         this.terminal.close()
     }

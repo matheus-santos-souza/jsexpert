@@ -1,0 +1,49 @@
+regex101.com
+^\d{3}.\d{3}.\d{3}-\d{2}$
+
+123.456.789-11
+333.777.111-22
+444.567.123-33
+
+replace: [.-] - vazio
+    resultado:
+        12345678911
+        33377711122
+        44456712333
+
+//---------------------------------------------------------------
+Wendel, Erick
+Gomes, Laila
+Santos, Matheus
+
+replace: ^(\w+),\s(\w+)$ - {firstname: "$2", lastname: "$1"}
+    resultado:
+        {firstname: "Erick", lastname: "Wendel"}
+        {firstname: "Laila", lastname: "Gomes"}
+        {firstname: "Matheus", lastname: "Santos"}
+
+//--------------------------------------------------------------
+O [Erick Wendel](https://erickwendel.com) faz palestras e você devia 
+seguilo lá no [Twitter](http://twitter.com/erickwendel_) ou até no 
+[Intagram](https://instagram.com/erickwendel_)
+
+Ah e pode pesquisar no [Google](https://google.com) ou 
+[Yahoo](https://yahoo.com)
+
+vai que vai!
+
+replace: \[(.*?)\]\(([http|https].*?)\) - <a href="$2">$1</a>
+    resultado:
+        O <a href="https://erickwendel.com">Erick Wendel</a> faz palestras e você devia 
+        seguilo lá no <a href="http://twitter.com/erickwendel_">Twitter</a> ou até no 
+        <a href="https://instagram.com/erickwendel_">Intagram</a>
+
+        Ah e pode pesquisar no <a href="https://google.com">Google</a> ou 
+        <a href="https://yahoo.com">Yahoo</a>
+
+        vai que vai!
+
+
+
+
+

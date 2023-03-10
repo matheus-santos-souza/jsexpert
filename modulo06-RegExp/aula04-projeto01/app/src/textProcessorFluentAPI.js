@@ -1,5 +1,7 @@
 'use strict'
 const { evalueteRegex } = require('./../src/util')
+const Person = require('./person.js')
+
 // O objetivo do FLUENT API é executar tarefas como um pipeline
 // step by step e no fim, chama o build. Muito similar ao padrao BUILDER
 // a diferneça aqui é sobre processos, o Builder sobre construção de objetos
@@ -45,6 +47,7 @@ class TextProcessorFluentAPI {
     }
 
     mapPerson() {
+        this.#content = this.#content.map(line => new Person(line))
         return this
     }
 

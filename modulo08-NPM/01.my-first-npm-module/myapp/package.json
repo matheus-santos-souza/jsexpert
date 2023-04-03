@@ -12,6 +12,6 @@
   "author": "matheus-santos-souza",
   "license": "ISC",
   "dependencies": {
-    "@matheus-santos-souza/fluentsql": "^1.0.0"
+    "@matheus-santos-souza/fluentsql": "^2.0.0"
   }
 }

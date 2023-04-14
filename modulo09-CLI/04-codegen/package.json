@@ -1,0 +1,18 @@
+{
+  "name": "04-codegen",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/",
+    "test": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --runInBand --no-cache --watch --config jest.config.mjs",
+    "test:cov": "set NODE_OPTIONS=--experimental-vm-modules && npx jest --config jest.config.mjs --coverage"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^29.5.0"
+  }
+}

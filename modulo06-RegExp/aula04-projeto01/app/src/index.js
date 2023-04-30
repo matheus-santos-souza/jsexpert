@@ -1,7 +1,8 @@
 'use strict'
 const { readFile } = require('fs/promises')
 const { join } = require('path')
-const pdf = require('pdf-parse')
+import pdf from 'pdf-parse'
+
 
 const TextProcessorFacade = require('./textProcessorFacade.js')
 

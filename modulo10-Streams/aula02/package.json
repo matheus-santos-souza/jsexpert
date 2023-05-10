@@ -1,0 +1,20 @@
+{
+  "name": "aula02",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "server": "mkdir -p logs && node webapi.js",
+    "api1": "curl localhost:3000 | tee logs/log1.txt",
+    "api2": "curl localhost:4000 | tee logs/log2.txt",
+    "example01": "node examples/concat-streams.pass-through.js | tee logs/concat-streams.pass-through.log.txt",
+    "example02": "node examples/async-streams.js | tee logs/async-streams.log.txt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.4.0"
+  }
+}
